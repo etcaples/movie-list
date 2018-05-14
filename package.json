@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "react-based movie list app",
   "author": "Emily Caples <etcaples@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
   "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash",
+    "start": "babel . --out-dir compiled --presets=env,react --ignore=node_modules,compiled --source-maps inline -w"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.2",
