@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash",
-    "start": "babel . --out-dir compiled --presets=env,react --ignore=node_modules,compiled --source-maps inline -w"
+    "start": "babel . --out-dir compiled --presets=env,react --ignore=node_modules,compiled --source-maps inline -w & live-server"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.2",
